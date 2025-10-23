@@ -1,0 +1,24 @@
+#Navegador{
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    background-color: rgb(209, 152, 9);
+    background-size: cover;
+
+}
+.botonNav{
+    border-radius: 5px;
+    border-color: auto;
+    background-color: rgb(232, 177, 60);
+    text-decoration: none;
+    
+}
+
+#TituloPrincipal{
+    border-radius: 5px;
+    color: yellow;
+    background-color: azure;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
