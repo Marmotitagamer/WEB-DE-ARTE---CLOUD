@@ -1,24 +1,31 @@
-#Navegador{
-    border-radius: 5px;
-    text-align: center;
-    text-decoration: none;
-    background-color: rgb(209, 152, 9);
-    background-size: cover;
-
-}
-.botonNav{
-    border-radius: 5px;
-    border-color: auto;
-    background-color: rgb(232, 177, 60);
-    text-decoration: none;
-    
+body{
+    background-color: #F2EDDC;
 }
 
+#SubPrincipal{
+    border-radius: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: #254027;
+}
 #TituloPrincipal{
     border-radius: 5px;
-    color: yellow;
-    background-color: azure;
+    color: #254027;
+    background-color: #F2BF91;
     font-size: 30px;
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#ArticuloPrincipal{
+    text-align: justify;
+    
+
+}
+select {
+  background-color: #D2B48C; /* tono marrón claro */
+  color: black;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #555;
+  font-size: 16px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
 }
