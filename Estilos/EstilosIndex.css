@@ -22,7 +22,7 @@ body{
 
 }
 select {
-  background-color: #D2B48C; /* tono marrón claro */
+  background-color: white;
   color: black;
   padding: 10px;
   border-radius: 8px;
@@ -31,7 +31,7 @@ select {
   box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
 }
 aside {
-  background-color: #F2EDDC;
+  background-color: white;
   border-radius: 5px;
   padding: 1em;
   border-left: 4px solid #254027;
@@ -45,13 +45,13 @@ aside h3 {
 #Parrafos{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 20px;
-    background-color: #F2BF91;
+    background-color: white;
     border-radius: 5px;
 }
 
 #asideStyle{
     flex: 1;
-    background-color: #F2BF91;
+    background-color: white;
     border-radius: 5px;
     padding: 1em; 
     border-left: 3px solid #254027;
