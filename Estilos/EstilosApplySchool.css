@@ -1,16 +1,14 @@
-
 :root {
-    --color-principal: #254027; /* Verde Bosque (Dark Green) */
-    --color-acento: #A65F21; /* Terracota (CTA) */
-    --color-acento-hover: #BF702A; /* Terracota Oscuro (Hover) */
-    --color-fondo-claro: #F2EDDC; /* Crema (Fondo principal) */
-    --color-fondo-seccion: #F2BF91; /* Melocotón (Bloques) */
-    --color-texto: #333333; /* Texto oscuro, mejor contraste */
+    --color-principal: #1C3A7A;
+    --color-acento: #AA2E2E;
+    --color-acento-hover: #8F2626;
+    --color-fondo-claro: #D9E0E9;
+    --color-fondo-seccion: #C79F63;
+    --color-texto: #202020;
     --fuente-titulo: 'Georgia', serif;
     --fuente-cuerpo: 'Arial', sans-serif;
 }
 
-/* --- Reset Básico y Tipografía --- */
 body {
     font-family: var(--fuente-cuerpo);
     color: var(--color-texto);
@@ -20,7 +18,6 @@ body {
     line-height: 1.6;
 }
 
-/* --- Encabezado y Títulos --- */
 header {
     background-color: var(--color-principal); 
     color: white;
@@ -29,7 +26,7 @@ header {
 }
 
 header h1 {
-    color: white !important; /* Asegura el blanco en el header */
+    color: white !important; 
     border-bottom: none !important;
 }
 
@@ -50,14 +47,13 @@ h2 {
 }
 
 #SubPrincipal {
-    color: #666;
+    color: #444444; 
     font-weight: normal;
     font-size: 1em;
     text-align: left;
     margin: 5px 0 5px 40px;
 }
 
-/* --- Select para Menú Móvil --- */
 select {
   background-color: var(--color-acento);
   color: white; 
@@ -70,14 +66,12 @@ select {
   margin-top: 20px;
 }
 
-/* --- Contenido Principal (Artículo y Párrafos) --- */
 article#Parrafos {
     padding: 20px 40px;
     max-width: 900px;
     margin: 0 auto;
 }
 
-/* --- Contenedor Flex para la barra lateral y el contenido --- */
 .contenedor-principal {
     display: flex; 
     align-items: flex-start; 
@@ -90,9 +84,7 @@ article#Parrafos {
     padding-left: 20px;
 }
 
-/* --- Bloque de Navegación Lateral (In "About The School") --- */
 main {
-    /* Estilos del div lateral */
     flex: 3;
     background-color: var(--color-fondo-seccion) !important; 
     padding: 20px;
@@ -114,7 +106,6 @@ main ul {
     padding-left: 20px;
 }
 
-/* --- Estilos de enlaces (TextoLadito es usado en la barra lateral) --- */
 .TextoLadito {
     color: var(--color-principal); 
     text-decoration: none;
@@ -130,7 +121,6 @@ main ul {
     color: var(--color-acento-hover);
 }
 
-/* --- Estilos de enlaces dentro del texto general --- */
 article#Parrafos a, 
 #SeccionAplicar a:not(.boton-primario) {
     color: var(--color-acento); 
@@ -149,15 +139,14 @@ article#Parrafos a:active,
     color: var(--color-acento-hover);
 }
 
-/* --- SECCIÓN CLAVE: LLAMADA A LA ACCIÓN (CTA) --- */
 #SeccionAplicar {
     max-width: 800px;
     margin: 40px auto;
     padding: 30px;
     background-color: var(--color-fondo-seccion);
     border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(37, 64, 39, 0.1); 
-    text-align: center; /* Centrar el contenido dentro de la sección */
+    box-shadow: 0 5px 15px rgba(28, 58, 122, 0.1); 
+    text-align: center; 
 }
 
 #SeccionAplicar h2 {
@@ -166,11 +155,9 @@ article#Parrafos a:active,
 }
 
 .destacado-cta {
-    /* Contenedor del CTA */
     text-align: center;
 }
 
-/* --- Botón Primario (CTA: Aplicar) --- */
 .boton-primario {
     display: block;
     width: 60%;
@@ -192,7 +179,6 @@ article#Parrafos a:active,
     transform: translateY(-2px);
 }
 
-/* --- Sesiones de Información Destacadas --- */
 article.info-sesiones { 
     margin: 20px 40px;
     padding: 20px;
@@ -201,7 +187,6 @@ article.info-sesiones {
     border-left: 5px solid var(--color-acento);
 }
 
-/* --- Footer --- */
 footer {
     background-color: var(--color-principal); 
     color: white;
