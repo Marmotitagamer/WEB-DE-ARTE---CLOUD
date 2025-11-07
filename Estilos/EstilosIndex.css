@@ -1,81 +1,103 @@
-body{
-    background-color: #F2EDDC;
+:root {
+    --azul-noche: #0D1B2A;          
+    --blanco-puro: #FAFAFA;         
+    --azul-electrico: #3C6E71;      
+    --azul-nebuloso: #2C3A4F;       
+    --gris-pardo-sepia: #7D685B;    
+    --gris-fantasmal: #C7D4DF;         
+    --fuente-base: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-#SubPrincipal{
-    border-radius: 5px;
-    font-size: 30px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-shadow: #254027;
+body {
+    background-color: var(--azul-nebuloso); 
+    color: var(--gris-fantasmal); 
+    font-family: var(--fuente-base);
 }
-#TituloPrincipal{
+
+#ArticuloPrincipal {
+    text-align: justify;
+    padding: 0 20px; 
+  }
+
+#Parrafos {
+    font-size: 20px;
+    background-color: var(--azul-noche); 
+    color: var(--gris-fantasmal);
     border-radius: 5px;
-    color: #254027;
-    background-color: #F2BF91;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+#TituloPrincipal {
+    border-radius: 5px;
+    color: var(--blanco-puro); /* Color del caballero */
+    background-color: var(--azul-noche); /* Fondo muy oscuro */
     font-size: 45px;
     text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: var(--fuente-base);
+    padding: 10px;
+    margin-bottom: 10px;
 }
-#ArticuloPrincipal{
-    text-align: justify;
-    
 
+#SubPrincipal {
+    font-size: 30px;
+    font-family: var(--fuente-base);
+    color: var(--azul-electrico); /* Color para resaltar */
+    text-shadow: 1px 1px 2px var(--azul-noche); /* Sombra suave */
+    padding-left: 10px;
 }
-select {
-  background-color: white;
-  color: black;
-  padding: 10px;
-  border-radius: 8px;
-  border: 1px solid #555;
-  font-size: 16px;
-  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+
+/* --- Barra Lateral (Aside) y Componentes Relacionados --- */
+aside, #asideStyle {
+    /* Fondo con el color de ruina/piedra */
+    background-color: var(--gris-pardo-sepia); 
+    border-radius: 5px;
+    padding: 1em;
+    /* Borde acentuado con el color de luz */
+    border-left: 4px solid var(--azul-electrico);
+    margin: 1em 0;
+    font-family: var(--fuente-base);
+    color: var(--azul-noche); /* Texto oscuro para contraste en sepia */
 }
-aside {
-  background-color: white;
-  border-radius: 5px;
-  padding: 1em;
-  border-left: 4px solid #254027;
-  margin: 1em 0;
-  font-family: 'Segoe UI', sans-serif;
-}
+
 aside h3 {
-  color: #254027;
+    /* Títulos en aside: Blanco para mejor legibilidad sobre sepia */
+    color: var(--blanco-puro); 
 }
 
-#Parrafos{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 20px;
-    background-color: white;
-    border-radius: 5px;
+/* --- Select para Menú --- */
+select {
+    background-color: var(--gris-pardo-sepia);
+    color: var(--blanco-puro);
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid var(--azul-electrico);
+    font-size: 16px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.4);
 }
 
-#asideStyle{
-    flex: 1;
-    background-color: white;
-    border-radius: 5px;
-    padding: 1em; 
-    border-left: 3px solid #254027;
+/* --- Enlaces (TextoLadito y ResaltadoGrande) --- */
+.TextoLadito, .ResaltadoGrande {
+    text-decoration: none;
+    color: var(--blanco-puro); /* Color base del texto */
+    transition: all 0.3s ease;
+    font-family: var(--fuente-base);
 }
 
 .TextoLadito {
-  text-decoration: none;
-  color: black;
-  transition: all 0.3s ease;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 18px;
-}
-a:hover {
-  color: #e74c3c;
-  background-color: #f1f1f1;
-  padding: 4px 8px;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    font-size: 18px;
 }
 
-.ResaltadoGrande{
- text-decoration: none;
-  color: black;
-  transition: all 0.3s ease;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 30px;
+.ResaltadoGrande {
+    font-size: 30px;
+    color: var(--azul-electrico); /* Destacado con luz azul */
+}
+
+/* Estilo de Hover */
+a:hover {
+    color: var(--azul-noche); /* Texto oscuro sobre el fondo de luz */
+    background-color: var(--azul-electrico); /* Fondo de luz azul */
+    padding: 4px 8px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
 }
