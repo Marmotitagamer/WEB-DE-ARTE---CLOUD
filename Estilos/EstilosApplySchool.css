@@ -1,10 +1,12 @@
 :root {
-    --color-principal: #1C3A7A;
-    --color-acento: #AA2E2E;
-    --color-acento-hover: #8F2626;
-    --color-fondo-claro: #D9E0E9;
-    --color-fondo-seccion: #C79F63;
-    --color-texto: #202020;
+    --color-principal: #0D1B2A;
+    --color-acento: #3C6E71;
+    --color-acento-hover: #0D1B2A;
+    --color-fondo-claro: #2C3A4F;
+    --color-fondo-seccion: #7D685B;
+    --color-texto: #C7D4DF;
+    --color-blanco: #FAFAFA;
+    
     --fuente-titulo: 'Georgia', serif;
     --fuente-cuerpo: 'Arial', sans-serif;
 }
@@ -20,34 +22,34 @@ body {
 
 header {
     background-color: var(--color-principal); 
-    color: white;
+    color: var(--color-blanco);
     padding: 30px 50px;
     text-align: center;
 }
 
 header h1 {
-    color: white !important; 
+    color: var(--color-blanco) !important; 
     border-bottom: none !important;
 }
 
 #TituloPrincipal {
     font-family: var(--fuente-titulo);
     font-size: 2.5em;
-    color: var(--color-principal); 
+    color: var(--color-blanco);
     margin-top: 30px;
     padding-bottom: 5px;
-    border-bottom: 2px solid var(--color-acento); 
+    border-bottom: 2px solid var(--color-acento);
     padding-left: 40px;
 }
 
 h2 {
-    color: var(--color-principal);
+    color: var(--color-acento);
     font-size: 1.8em;
     padding: 10px 0;
 }
 
 #SubPrincipal {
-    color: #444444; 
+    color: var(--color-texto);
     font-weight: normal;
     font-size: 1em;
     text-align: left;
@@ -56,7 +58,7 @@ h2 {
 
 select {
   background-color: var(--color-acento);
-  color: white; 
+  color: var(--color-blanco); 
   padding: 10px;
   border-radius: 8px;
   border: 1px solid var(--color-acento-hover);
@@ -86,7 +88,7 @@ article#Parrafos {
 
 main {
     flex: 3;
-    background-color: var(--color-fondo-seccion) !important; 
+    background-color: var(--color-fondo-seccion) !important;
     padding: 20px;
     border-radius: 10px;
     max-width: 300px;
@@ -104,10 +106,11 @@ main p {
 main ul {
     list-style: square;
     padding-left: 20px;
+    color: var(--color-principal);
 }
 
 .TextoLadito {
-    color: var(--color-principal); 
+    color: var(--color-texto);
     text-decoration: none;
     transition: color 0.3s;
 }
@@ -118,12 +121,12 @@ main ul {
 }
 
 .TextoLadito:active {
-    color: var(--color-acento-hover);
+    color: var(--color-principal);
 }
 
 article#Parrafos a, 
 #SeccionAplicar a:not(.boton-primario) {
-    color: var(--color-acento); 
+    color: var(--color-acento);
     text-decoration: underline;
     font-weight: bold;
     transition: color 0.3s;
@@ -131,26 +134,27 @@ article#Parrafos a,
 
 article#Parrafos a:hover,
 #SeccionAplicar a:not(.boton-primario):hover {
-    color: var(--color-principal); 
+    color: var(--color-blanco); 
 }
 
 article#Parrafos a:active,
 #SeccionAplicar a:not(.boton-primario):active {
-    color: var(--color-acento-hover);
+    color: var(--color-principal);
 }
 
 #SeccionAplicar {
     max-width: 800px;
     margin: 40px auto;
     padding: 30px;
-    background-color: var(--color-fondo-seccion);
+    background-color: var(--color-principal);
+    color: var(--color-texto);
     border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(28, 58, 122, 0.1); 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
     text-align: center; 
 }
 
 #SeccionAplicar h2 {
-    color: var(--color-acento); 
+    color: var(--color-acento);
     text-align: center;
 }
 
@@ -163,19 +167,20 @@ article#Parrafos a:active,
     width: 60%;
     margin: 20px auto;
     padding: 15px 10px;
-    background-color: var(--color-acento); 
-    color: white;
+    background-color: var(--color-acento);
+    color: var(--color-principal);
     text-align: center;
     text-decoration: none;
     font-weight: bold;
     font-size: 1.2em;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
     transition: background-color 0.3s, transform 0.2s;
 }
 
 .boton-primario:hover {
-    background-color: var(--color-acento-hover); 
+    background-color: var(--color-acento-hover);
+    color: var(--color-blanco);
     transform: translateY(-2px);
 }
 
@@ -183,13 +188,13 @@ article.info-sesiones {
     margin: 20px 40px;
     padding: 20px;
     border-radius: 10px;
-    background-color: white; 
+    background-color: var(--color-fondo-claro);
     border-left: 5px solid var(--color-acento);
 }
 
 footer {
     background-color: var(--color-principal); 
-    color: white;
+    color: var(--color-blanco);
     padding: 20px 40px;
     margin-top: 40px;
     font-size: 0.9em;
@@ -197,16 +202,16 @@ footer {
 }
 
 footer a {
-    color: var(--color-fondo-claro); 
+    color: var(--color-fondo-seccion);
     text-decoration: none;
     transition: color 0.3s;
 }
 
 footer a:hover {
-    color: var(--color-acento); 
+    color: var(--color-acento);
     text-decoration: underline;
 }
 
 footer a:active {
-    color: var(--color-acento-hover); 
+    color: var(--color-acento-hover);
 }
