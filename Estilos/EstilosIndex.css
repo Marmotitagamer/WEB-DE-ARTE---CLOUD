@@ -1,81 +1,191 @@
-body{
-    background-color: #F2EDDC;
+:root {
+    --color-principal: #0D1B2A;
+    --color-acento: #FAFAFA; 
+    --color-acento-hover: #a5e8e8; 
+    --color-fondo-claro: #2C3A4F; 
+    --color-fondo-seccion: #7D685B; 
+    --color-texto: #C7D4DF; 
+    --fuente-titulo: 'Georgia', serif;
+    --fuente-cuerpo: 'Arial', sans-serif;
 }
-
-#SubPrincipal{
-    border-radius: 5px;
-    font-size: 30px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-shadow: #254027;
+body {
+    font-family: var(--fuente-cuerpo);
+    color: var(--color-texto);
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-fondo-claro); 
+    line-height: 1.6;
 }
-#TituloPrincipal{
-    border-radius: 5px;
-    color: #254027;
-    background-color: #F2BF91;
-    font-size: 45px;
+header {
+    background-color: var(--color-principal); 
+    color: var(--color-acento); 
+    padding: 30px 50px;
     text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-#ArticuloPrincipal{
-    text-align: justify;
-    
 
+header h1 {
+    color: var(--color-acento) !important;
+    border-bottom: none !important;
+}
+
+#TituloPrincipal {
+    font-family: var(--fuente-titulo);
+    font-size: 2.5em;
+    color: var(--color-acento); 
+    margin-top: 30px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid var(--color-acento-hover); 
+    padding-left: 40px;
+}
+h2 {
+    color: var(--color-acento-hover);
+    font-size: 1.8em;
+    padding: 10px 0;
+}
+#SubPrincipal {
+    color: var(--color-texto);
+    font-weight: normal;
+    font-size: 1em;
+    text-align: left;
+    margin: 5px 0 5px 40px;
 }
 select {
-  background-color: white;
-  color: black;
-  padding: 10px;
-  border-radius: 8px;
-  border: 1px solid #555;
-  font-size: 16px;
-  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    background-color: var(--color-principal);
+    color: var(--color-acento); 
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid var(--color-acento-hover);
+    font-size: 16px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+    margin-left: 40px;
+    margin-top: 20px;
 }
-aside {
-  background-color: white;
-  border-radius: 5px;
-  padding: 1em;
-  border-left: 4px solid #254027;
-  margin: 1em 0;
-  font-family: 'Segoe UI', sans-serif;
+article#Parrafos {
+    padding: 20px 40px;
+    max-width: 900px;
+    margin: 0 auto;
 }
-aside h3 {
-  color: #254027;
+main > p#Parrafos {
+    color: var(--color-texto);
 }
-
-#Parrafos{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 20px;
-    background-color: white;
-    border-radius: 5px;
-}
-
-#asideStyle{
-    flex: 1;
-    background-color: white;
-    border-radius: 5px;
-    padding: 1em; 
-    border-left: 3px solid #254027;
+aside#asideStyle {
+    flex: 3;
+    background-color: var(--color-fondo-seccion);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 300px;
+    margin-left: 20px;
+    margin-top: 20px;
 }
 
+aside#asideStyle h3 {
+    color: var(--color-acento-hover);
+    font-size: 1.5em;
+    margin-top: 0;
+}
+
+aside#asideStyle ul {
+    list-style: square;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+
+
+div > main:first-child {
+    background-color: var(--color-fondo-seccion); 
+    padding: 20px;
+    border-radius: 10px;
+}
+
+div > main > main {
+    background-color: var(--color-fondo-claro); 
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 15px;
+}
 .TextoLadito {
-  text-decoration: none;
-  color: black;
-  transition: all 0.3s ease;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 18px;
+    color: var(--color-acento); 
+    text-decoration: none;
+    transition: color 0.3s;
 }
-a:hover {
-  color: #e74c3c;
-  background-color: #f1f1f1;
-  padding: 4px 8px;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+.TextoLadito:hover {
+    text-decoration: underline;
+    color: var(--color-acento-hover);
+}
+.TextoLadito:active {
+    color: var(--color-principal);
+}
+article#Parrafos a,
+.ResaltadoGrande {
+    color: var(--color-acento-hover); 
+    text-decoration: underline;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+article#Parrafos a:hover,
+.ResaltadoGrande:hover {
+    color: var(--color-acento); 
+}
+article#Parrafos a:active,
+.ResaltadoGrande:active {
+    color: var(--color-principal);
+}
+article[style*="background-color: #F2BF91;"] {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: var(--color-fondo-seccion) !important;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(13, 27, 42, 0.4); 
+    text-align: center; 
+    color: var(--color-acento); 
+}
+article[style*="background-color: #F2BF91;"] h1,
+article[style*="background-color: #F2BF91;"] h2,
+article[style*="background-color: #F2BF91;"] p {
+     color: var(--color-acento); 
+}
+section[style*="background-color: #f9f9f9"] {
+    background-color: var(--color-fondo-seccion) !important;
+    color: var(--color-acento) !important; 
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 20px auto;
+}
+section[style*="background-color: #f9f9f9"] h2,
+section[style*="background-color: #f9f9f9"] h3,
+section[style*="background-color: #f9f9f9"] ul,
+section[style*="background-color: #f9f9f9"] p {
+    color: var(--color-acento) !important;
+}
+footer {
+    background-color: var(--color-principal); 
+    color: var(--color-texto);
+    padding: 20px 40px;
+    margin-top: 40px;
+    font-size: 0.9em;
+    text-align: center;
+}
+footer a {
+    color: var(--color-acento-hover); 
+    text-decoration: none;
+    transition: color 0.3s;
 }
 
-.ResaltadoGrande{
- text-decoration: none;
-  color: black;
-  transition: all 0.3s ease;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 30px;
+footer a:hover {
+    color: var(--color-acento); 
+    text-decoration: underline;
+}
+
+footer a:active {
+    color: var(--color-fondo-seccion); 
+}
+footer p#Parrafos {
+    font-size: 0.9em !important;
+    color: var(--color-texto);
+    margin: 10px 0;
+    padding: 0 20px;
+    text-align: center;
 }
