@@ -88,6 +88,89 @@ aside#asideStyle ul {
     list-style: square;
     padding-left: 20px;
     margin-bottom: 20px;
+    --azul-noche: #0D1B2A;          
+    --blanco-puro: #FAFAFA;         
+    --azul-electrico: #3C6E71;      
+    --azul-nebuloso: #2C3A4F;       
+    --gris-pardo-sepia: #7D685B;    
+    --gris-fantasmal: #C7D4DF;         
+    --fuente-base: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--azul-nebuloso); 
+    color: var(--gris-fantasmal); 
+    font-family: var(--fuente-base);
+}
+
+#ArticuloPrincipal {
+    text-align: justify;
+    padding: 0 20px; 
+  }
+
+#Parrafos {
+    font-size: 20px;
+    background-color: var(--azul-noche); 
+    color: var(--gris-fantasmal);
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+#TituloPrincipal {
+    border-radius: 5px;
+    color: var(--blanco-puro); /* Color del caballero */
+    background-color: var(--azul-noche); /* Fondo muy oscuro */
+    font-size: 45px;
+    text-align: center;
+    font-family: var(--fuente-base);
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#SubPrincipal {
+    font-size: 30px;
+    font-family: var(--fuente-base);
+    color: var(--azul-electrico); /* Color para resaltar */
+    text-shadow: 1px 1px 2px var(--azul-noche); /* Sombra suave */
+    padding-left: 10px;
+}
+
+/* --- Barra Lateral (Aside) y Componentes Relacionados --- */
+aside, #asideStyle {
+    /* Fondo con el color de ruina/piedra */
+    background-color: var(--gris-pardo-sepia); 
+    border-radius: 5px;
+    padding: 1em;
+    /* Borde acentuado con el color de luz */
+    border-left: 4px solid var(--azul-electrico);
+    margin: 1em 0;
+    font-family: var(--fuente-base);
+    color: var(--azul-noche); /* Texto oscuro para contraste en sepia */
+}
+
+aside h3 {
+    /* Títulos en aside: Blanco para mejor legibilidad sobre sepia */
+    color: var(--blanco-puro); 
+}
+
+/* --- Select para Menú --- */
+select {
+    background-color: var(--gris-pardo-sepia);
+    color: var(--blanco-puro);
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid var(--azul-electrico);
+    font-size: 16px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+}
+
+/* --- Enlaces (TextoLadito y ResaltadoGrande) --- */
+.TextoLadito, .ResaltadoGrande {
+    text-decoration: none;
+    color: var(--blanco-puro); /* Color base del texto */
+    transition: all 0.3s ease;
+    font-family: var(--fuente-base);
 }
 
 
@@ -188,4 +271,19 @@ footer p#Parrafos {
     margin: 10px 0;
     padding: 0 20px;
     text-align: center;
+    font-size: 18px;
+}
+
+.ResaltadoGrande {
+    font-size: 30px;
+    color: var(--azul-electrico); /* Destacado con luz azul */
+}
+
+/* Estilo de Hover */
+a:hover {
+    color: var(--azul-noche); /* Texto oscuro sobre el fondo de luz */
+    background-color: var(--azul-electrico); /* Fondo de luz azul */
+    padding: 4px 8px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
 }
